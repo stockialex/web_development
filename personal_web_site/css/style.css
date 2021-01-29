@@ -1,0 +1,81 @@
+html{
+    background-image: url(../images/AlexStockiBackground.jpg);
+    background-repeat: repeat;
+}
+
+html, body, #grid{
+    height: 100%;
+}
+
+#grid{
+    display: grid;
+    grid-template-areas:
+    "head   head    head"
+    "info   info    info"
+    /*"info   info    info"*/
+    "footer footer  footer";
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 1fr 300px /*1fr*/;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    height: 
+}
+
+.head{
+    grid-area: head;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+.content{
+    grid-area: info;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;    
+}
+
+a{
+    margin: 20px;
+}
+
+h1, h3, p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.h1{
+    padding-bottom: 0%;
+    color: white;
+}
+
+.profileBox{
+    width: 400px;
+    height: 480px;
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 0px;
+    text-align: center;
+
+    grid-area: todo;
+}
+
+.profilePicture{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+hr {
+    color: white;    
+}
