@@ -77,6 +77,16 @@ hr {
     color: white;    
 }
 
+i{
+    color: black;
+}
+
+i:hover{
+    color: rgba(234, 237, 240, 0.815);
+}
+
+
+
 /* ----- Mobile First -----*/
 
 @media only screen and(max-width: 320px){
