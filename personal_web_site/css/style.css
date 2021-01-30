@@ -12,14 +12,12 @@ html, body, #grid{
     grid-template-areas:
     "head   head    head"
     "info   info    info"
-    /*"info   info    info"*/
     "footer footer  footer";
 
     grid-template-columns: auto auto auto;
-    grid-template-rows: 100px 1fr 300px /*1fr*/;
+    grid-template-rows: 50px 1fr 70px;
     grid-column-gap: 1px;
     grid-row-gap: 1px;
-    height: 
 }
 
 .head{
@@ -66,8 +64,7 @@ h1, h3, p{
     margin: 0 auto;
     margin-top: 0px;
     text-align: center;
-
-    grid-area: todo;
+    border-radius: 25px;
 }
 
 .profilePicture{
@@ -78,4 +75,51 @@ h1, h3, p{
 
 hr {
     color: white;    
+}
+
+/* ----- Mobile First -----*/
+
+@media only screen and(max-width: 320px){
+    #grid{
+        display: grid;
+        grid-template-areas:
+        
+        "info"
+        "footer";
+
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 300px;
+        grid-column-gap: 1px;
+        grid-row-gap: 1px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    #grid{
+        display: grid;
+        grid-template-areas:
+        "info"
+        "footer";
+
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 300px;
+        grid-column-gap: 0px;
+        grid-row-gap: 1px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    #grid{
+        display: grid;
+        grid-template-areas:
+        "info"
+        "footer";
+
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 300px;
+        grid-column-gap: 0px;
+        grid-row-gap: 1px;
+        justify-content: center;
+    }
 }
