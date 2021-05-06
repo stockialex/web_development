@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 
 html, body{
-    /* background-image: linear-gradient(to top, #f3722c, #f47929, #f58026, #f68624, #f78d21, #f79423, #f89c26, #f8a329, #f8ac32, #f8b53b, #f9be45, #f9c74f); */
     background-color: #F9C74F;
     font-family: 'Roboto', sans-serif;
     width: 100%;
@@ -15,15 +14,13 @@ html, body{
     border-radius: 5%;
 }
 
-.name-title, .job-title{
-    color: #fff;
-    text-shadow: 2px 3px 0px #898999;
+.name-title, .job-title, .fab{
+    color: #343a40;
 }
 
 .name-title{
     font-size: 110px;
     font-weight: 500;
-    font-style: italic;
 }
 
 .job-title{
@@ -38,14 +35,11 @@ p{
 
 .fab{
     font-size: 3rem;
-    color: #fff;
-    text-shadow: 2px 3px 0px #898999;
     transition: all 1s;
 }
 
 .fab:hover{
-    color: #F94144;
-    text-shadow: 2px 3px 0px #4b4848;
+    color: #154BAD;
 }
 
 .fa-linkedin-in{
@@ -56,7 +50,7 @@ p{
     padding-left: 1rem;
 }
 
-
+/* Mobile breakpoint */
 @media (max-width: 575px) {
     .name-title{
         font-size: 4.1rem;
@@ -69,6 +63,5 @@ p{
     .profile-picture{
         width: 200px;
         height: 200px;
-    }
-    
+    }  
 }
