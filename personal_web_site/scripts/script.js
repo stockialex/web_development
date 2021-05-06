@@ -11,14 +11,27 @@ Uso HTML, CSS y JavaScript para mis proyectos,ayudándome con Bootstrap, JQuery 
 Me divierto buscando la manera de automatizar tareas con Python y en mi trabajo utilizo SQL.
 Contactame si estás buscando a alguien con motivación y muchas ganas de seguir aprendiendo.`;
 
+const ESP_LAN = "esp", ENG_LAN = "eng";
+const SPEED_ANIMATION = "slow";
+const PROFILE_TEXT = ".text-profile";
+const BTN_ESP = "#spanish-lan", BTN_ENG = "#english-lan";
+let activeLan = ESP_LAN;
+
 // By default the profile text language is spanish
-$(".text-profile").text(textEsp);
+$(PROFILE_TEXT).text(textEsp);
 
 // Allows to change the language
-$("#spanish-lan").click(()=>{ 
-    $(".text-profile").text(textEsp);
-});
-
-$("#english-lan").click(()=>{ 
-    $(".text-profile").text(textEng);
-});
+$(BTN_ESP).click(()=>{
+    if(activeLan != ESP_LAN){
+        $(PROFILE_TEXT).fadeOut(SPEED_ANIMATION, ()=>$(PROFILE_TEXT).text(textEsp));
+        $(PROFILE_TEXT).fadeIn(SPEED_ANIMATION);
+        activeLan = ESP_LAN;
+    }
+})
+$(BTN_ENG).click(()=>{
+    if(activeLan != ENG_LAN){
+        $(PROFILE_TEXT).fadeOut(SPEED_ANIMATION, ()=>$(PROFILE_TEXT).text(textEng));
+        $(PROFILE_TEXT).fadeIn(SPEED_ANIMATION);
+        activeLan = ENG_LAN;
+    }
+})

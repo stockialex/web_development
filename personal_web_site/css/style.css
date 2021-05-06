@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,500&display=swap');
 
 html, body{
     /* background-image: linear-gradient(to top, #f3722c, #f47929, #f58026, #f68624, #f78d21, #f79423, #f89c26, #f8a329, #f8ac32, #f8b53b, #f9be45, #f9c74f); */
@@ -18,6 +18,7 @@ html, body{
 .name-title{
     font-size: 110px;
     font-weight: 500;
+    font-style: italic;
     color: #fff;
     text-shadow: 2px 3px 0px #898999;
 }
@@ -25,6 +26,7 @@ html, body{
 p{
     color: rgb(61, 59, 59);
     font-size: 1.4rem;
+    font-weight: 300;
 }
 
 .container{
