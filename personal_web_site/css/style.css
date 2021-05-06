@@ -9,18 +9,25 @@ html, body{
 }
 
 .profile-picture{
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
 
     border-radius: 5%;
+}
+
+.name-title, .job-title{
+    color: #fff;
+    text-shadow: 2px 3px 0px #898999;
 }
 
 .name-title{
     font-size: 110px;
     font-weight: 500;
     font-style: italic;
-    color: #fff;
-    text-shadow: 2px 3px 0px #898999;
+}
+
+.job-title{
+    font-size: 2.7rem;
 }
 
 p{
@@ -29,8 +36,39 @@ p{
     font-weight: 300;
 }
 
-.container{
-    /* border: 2px solid white; */
+.fab{
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 3px 0px #898999;
+    transition: all 1s;
 }
-.picture-container{
+
+.fab:hover{
+    color: #F94144;
+    text-shadow: 2px 3px 0px #4b4848;
+}
+
+.fa-linkedin-in{
+    padding-right: 1rem;
+}
+
+.fa-github{
+    padding-left: 1rem;
+}
+
+
+@media (max-width: 575px) {
+    .name-title{
+        font-size: 4.1rem;
+    }
+    
+    .job-title{
+        font-size: 2.2rem;
+    }
+
+    .profile-picture{
+        width: 200px;
+        height: 200px;
+    }
+    
 }
