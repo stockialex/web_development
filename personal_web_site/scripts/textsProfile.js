@@ -10,3 +10,5 @@ I learnt programming using C so everything that came after that was amazing.
 I use HTML, CSS and JavaScript on my projects, with the help of Bootstrap, JQuery and now also React js.
 One of my hobbies is use Python to automate boring stuff. Oh and also I know the basics of SQL because it makes easier my job.
 Contact me if you are looking for someone with motivation and eager to continue learning.`;
+
+const profileMail = `alexstocki.dev@gmail.com`;

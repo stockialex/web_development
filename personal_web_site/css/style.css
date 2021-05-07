@@ -46,8 +46,29 @@ p{
     padding-right: 1rem;
 }
 
-.fa-github{
+.fa-github, .fa-envelope{
     padding-left: 1rem;
+}
+
+/* Transition to show and hide the mail */
+.hidden {
+    opacity: 0;
+    -webkit-transition:   0.5s ease;
+    -moz-transition:  0.5s ease;
+    -ms-transition:  0.5s ease;
+    -o-transition:  0.5s ease;
+    transition:  0.5s ease;
+    transition-delay:0.2s;
+}
+  
+.visible {
+    opacity: 1;
+    -webkit-transition:   0.5s ease;
+    -moz-transition:  0.5s ease;
+    -ms-transition:  0.5s ease;
+    -o-transition:  0.5s ease;
+    transition:  0.5s ease;
+    transition-delay:0.2s;
 }
 
 /* Mobile breakpoint */

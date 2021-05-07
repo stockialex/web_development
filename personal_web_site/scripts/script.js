@@ -1,8 +1,11 @@
 const ESP_LAN = "esp", ENG_LAN = "eng";
 const SPEED_ANIMATION = "slow";
 const PROFILE_TEXT = ".text-profile";
+const PROFILE_MAIL = "#contact-mail";
 const BTN_ESP = "#spanish-lan", BTN_ENG = "#english-lan";
+const BTN_MAIL = "#show-mail";
 let activeLan = ESP_LAN;
+let visibleMail = false;
 
 // By default the profile text language is spanish
 $(PROFILE_TEXT).text(profileTextEsp);
@@ -21,5 +24,23 @@ $(BTN_ENG).click(()=>{
         $(PROFILE_TEXT).fadeOut(SPEED_ANIMATION, ()=>$(PROFILE_TEXT).text(profileTextEng));
         $(PROFILE_TEXT).fadeIn(SPEED_ANIMATION);
         activeLan = ENG_LAN;
+    }
+})
+
+// Shows the contact mail when the icon is clicked
+$(BTN_MAIL).click(()=>{
+    // if(!visibleMail){
+    //     $(PROFILE_MAIL).fadeIn(SPEED_ANIMATION);
+    //     visibleMail = true;
+    // }
+    // else{
+    //     $(PROFILE_MAIL).fadeOut(SPEED_ANIMATION, ()=>$(PROFILE_MAIL).text(profileMail));
+    //     visibleMail = false;
+    // }
+    if($("#contact-mail").hasClass("hidden")){
+        $("#contact-mail").removeClass("hidden").addClass("visible");
+    }
+    else{
+        $("#contact-mail").removeClass("visible").addClass("hidden");
     }
 })
