@@ -35,14 +35,14 @@ p{
 
 .fab{
     font-size: 3rem;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 
 .fab:hover{
-    color: #154BAD;
+    color: #54575B;
 }
 
-.fa-linkedin-in{
+.fa-linkedin-in, .fa-github{
     padding-right: 1rem;
 }
 

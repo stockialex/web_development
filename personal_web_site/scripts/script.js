@@ -9,6 +9,8 @@ let visibleMail = false;
 
 // By default the profile text language is spanish
 $(PROFILE_TEXT).text(profileTextEsp);
+// Set the mail
+$(PROFILE_MAIL).text(profileMail);
 
 // Allows to change the language
 $(BTN_ESP).click(()=>{
@@ -29,14 +31,6 @@ $(BTN_ENG).click(()=>{
 
 // Shows the contact mail when the icon is clicked
 $(BTN_MAIL).click(()=>{
-    // if(!visibleMail){
-    //     $(PROFILE_MAIL).fadeIn(SPEED_ANIMATION);
-    //     visibleMail = true;
-    // }
-    // else{
-    //     $(PROFILE_MAIL).fadeOut(SPEED_ANIMATION, ()=>$(PROFILE_MAIL).text(profileMail));
-    //     visibleMail = false;
-    // }
     if($("#contact-mail").hasClass("hidden")){
         $("#contact-mail").removeClass("hidden").addClass("visible");
     }
