@@ -1,11 +1,12 @@
 import { useState } from 'react';
 
-
-
 const CreateNote = (props) => { 
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
     
+    const isEmpty = (title === '' || content === '')
+    const error = isEmpty ? 'You must enter a title and content' : null
+
     const handleChangeTitle = (event) => {
         setTitle(event.target.value)
     }
@@ -15,6 +16,7 @@ const CreateNote = (props) => {
     }
 
     const handleSubmit = (event) => {
+        
         let note = {
             noteTitle: title,
             noteContent: content
@@ -48,7 +50,8 @@ const CreateNote = (props) => {
                     onChange={handleChangeContent}
                 >
                 </textarea>
-                <button onClick={handleSubmit}>Add</button>
+                <div style={{color: 'green'}}>{error}</div>
+                <button disabled={error} onClick={handleSubmit}>Add</button>
             </form>
         </div>
     )
